@@ -4,7 +4,7 @@
 }
 
 #game_background {
-    background: url("background_basket.svg");
+    background: url("grafik/background_basket.svg");
     background-size: 100%;
     width: 100vw;
     height: 178vw;
@@ -13,7 +13,7 @@
 }
 
 #full_life {
-    background: url("full_life.svg");
+    background: url("grafik/full_life.svg");
     background-size: 100%;
     width: 26vw;
     height: 7vw;
@@ -24,7 +24,7 @@
 
 
 #timer {
-    background: url("timer.svg");
+    background: url("grafik/timer.svg");
     background-size: 100%;
     width: 10vw;
     height: 10vw;
@@ -34,7 +34,7 @@
 }
 
 #timer_time {
-    background: url("timer_time.svg");
+    background: url("grafik/timer_time.svg");
     background-size: 100%;
     width: 10vw;
     height: 11vw;
@@ -43,113 +43,364 @@
     left: 3vw;
 }
 
+
+
 #pizza {
-    background: url("pizza.svg");
+    background: url("grafik/pizza.svg");
     background-size: 100%;
     width: 15vw;
     height: 24vw;
     position: absolute;
-    top: 20vw;
-    left: 70vw;
+    transform: translateX(65vw) translateY(-200vw);
+}
+
+
+.pizza_bevaegelse {
+    animation-name: pizza_bevaegelse;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes pizza_bevaegelse {
+
+    0% {
+        transform: translateX(65vw) translateY(-200vw)
+    }
+
+    100% {
+        transform: translateX(45vw) translateY(-40vw);
+    }
 }
 
 
 
 #Pizza_rotated {
-    background: url("Pizza_rotated.svg");
+    background: url("grafik/Pizza_rotated.svg");
     background-size: 100%;
     width: 20vw;
     height: 15vw;
     position: absolute;
-    top: 94vw;
-    left: 30vw;
+    transform: translateX(30vw) translateY(-195vw);
+
+
 }
 
 
+.Pizza_rotated_bevaegelse {
+    animation-name: Pizza_rotated_bevaegelse;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+
+
+
+}
+
+@keyframes Pizza_rotated_bevaegelse {
+
+    0% {
+        transform: translateX(35vw) translateY(-185vw);
+    }
+
+    100% {
+        transform: translateX(30vw) translateY(-30vw);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 #batteri {
-    background: url("batteri.svg");
+    background: url("grafik/batteri.svg");
     background-size: 100%;
     width: 7vw;
     height: 16vw;
     position: absolute;
-    top: 120vw;
-    left: 18vw;
+    transform: translateX(25vw) translateY(-200vw)
 }
 
 
+
+.batteri_bevaegelse {
+    animation-name: batteri_bevaegelse;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes batteri_bevaegelse {
+
+    0% {
+        transform: translateX(25vw) translateY(-200vw)
+    }
+
+    100% {
+        transform: translateX(25vw) translateY(-30vw)
+    }
+}
+
+
+
+
+
 #batteri_rotaed {
-    background: url("batteri_rotaed.svg");
+    background: url("grafik/batteri_rotaed.svg");
     background-size: 100%;
     width: 10vw;
     height: 11vw;
     position: absolute;
-    top: 80vw;
-    left: 60vw;
+    transform: translateX(60vw) translateY(-195vw)
 }
 
 
+.batteri_rotaed_bevaegelse {
+    animation-name: batteri_rotaed_bevaegelse;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes batteri_rotaed_bevaegelse {
+
+    0% {
+        transform: translateX(65vw) translateY(-195vw)
+    }
+
+    100% {
+        transform: translateX(65vw) translateY(-60vw)
+    }
+}
+
+
+
+
+
 #avocado_rotaed_01 {
-    background: url("avocado_rotaed_01.svg");
+    background: url("grafik/avocado_rotaed_01.svg");
     background-size: 100%;
     width: 10vw;
     height: 11.3vw;
     position: absolute;
-    top: 32vw;
-    left: 18vw;
+    transform: translateX(15vw) translateY(-195vw)
 }
 
 
+.avocado_rotaed_01_bevaegelse {
+    animation-name: avocado_rotaed_01_bevaegelse;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes avocado_rotaed_01_bevaegelse {
+
+    0% {
+        transform: translateX(15vw) translateY(-195vw)
+    }
+
+    100% {
+        transform: translateX(17vw) translateY(-30vw)
+    }
+}
+
+
+
+
+
 #avocado_rotaded_02 {
-    background: url("avocado_rotaded_02.svg");
+    background: url("grafik/avocado_rotaded_02.svg");
     background-size: 100%;
     width: 10vw;
     height: 16.3vw;
     position: absolute;
-    top: 135vw;
-    left: 50vw;
+    transform: translateX(87vw) translateY(-195vw)
 }
+
+
+
+
+.avocado_rotaed_02_bevaegelse {
+    animation-name: avocado_rotaed_02_bevaegelse;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes avocado_rotaed_02_bevaegelse {
+
+    0% {
+        transform: translateX(87vw) translateY(-195vw)
+    }
+
+    100% {
+        transform: translateX(80vw) translateY(-18vw)
+    }
+}
+
+
+
+
 
 
 #milk_rotated {
-    background: url("milk_rotated.svg");
+    background: url("grafik/milk_rotated.svg");
     background-size: 100%;
     width: 16vw;
-    height: 19vw;
+    height: 25.5vw;
     position: absolute;
-    top: 146.7vw;
-    left: 70vw;
+    transform: translateX(87vw) translateY(-210vw)
 }
 
 
+
+.milk_rotated_bevaegelse {
+    animation-name: milk_rotated_bevaegelse;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes milk_rotated_bevaegelse {
+
+    0% {
+        transform: translateX(87vw) translateY(-210vw)
+    }
+
+    100% {
+        transform: translateX(60vw) translateY(-18vw)
+    }
+}
+
+
+
+
+
 #milk {
-    background: url("milk.svg");
+    background: url("grafik/milk.svg");
     background-size: 100%;
     width: 13vw;
     height: 25vw;
     position: absolute;
-    top: 70vw;
-    left: 5vw;
+    transform: translateX(87vw) translateY(-210vw)
 }
 
 
+
+.milk_bevaegelse {
+    animation-name: milk_bevaegelse;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes milk_bevaegelse {
+
+    0% {
+        transform: translateX(46vw) translateY(-210vw)
+    }
+
+    100% {
+        transform: translateX(80vw) translateY(-33vw)
+    }
+}
+
+
+
+
+
+
+
+
 #glass_rotated_01 {
-    background: url("glass_rotated_01.svg");
+    background: url("grafik/glass_rotated_01.svg");
     background-size: 100%;
     width: 17vw;
     height: 16.4vw;
     position: absolute;
-    top: -6vw;
-    left: 40vw;
+    transform: translateX(46vw) translateY(-210vw)
 }
 
 
 
+
+
+
+
+
+.glass_rotated_01_bevaegelse {
+    animation-name: glass_rotated_01_bevaegelse;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes glass_rotated_01_bevaegelse {
+
+    0% {
+        transform: translateX(46vw) translateY(-210vw)
+    }
+
+    100% {
+        transform: translateX(8vw) translateY(-33vw)
+    }
+}
+
+
+
+
+
+
+
+
 #glass_rotated_02 {
-    background: url("glass_rotated_02.svg");
+    background: url("grafik/glass_rotated_02.svg");
     background-size: 100%;
     width: 17vw;
     height: 17vw;
     position: absolute;
-    top: 110vw;
-    left: 70vw;
+    transform: translateX(50vw) translateY(-210vw)
+}
+
+
+.glass_rotated_02_bevaegelse {
+    animation-name: glass_rotated_02_bevaegelse;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframe glass_rotated_01_bevaegelse {
+
+    0% {
+        transform: translateX(50vw) translateY(-210vw)
+    }
+
+    100% {
+        transform: translateX(8vw) translateY(-33vw)
+    }
 }
