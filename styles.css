@@ -1,14 +1,125 @@
-* {
+body {
     margin: 0;
     padding: 0;
 }
 
+
+.hide {
+    display: none;
+}
+
+
+.show {
+    visibility: visible;
+}
+
+
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+#screen {
+    width: 56.25vw;
+    height: 100vw;
+    background-color: skyblue;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#start {
+    background-image: url("grafik/start.svg");
+    background-size: 100%;
+    width: 56.25vw;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: non;
+}
+
+
+#play {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(grafik/play.svg);
+    background-size: 100%;
+    left: 18vw;
+    top: 39vw;
+
+    cursor: pointer;
+}
+
+#game {
+    position: absolute;
+    width: 56.25vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+}
+
+
+#settings {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(grafik/);
+    background-size: 100%;
+    left: 40vw;
+    top: 77vw;
+}
+
+
+
 #game_background {
     background: url("grafik/background_basket.svg");
     background-size: 100%;
-    width: 100vw;
-    height: 178vw;
-    position: relative;
+    width: 56.25vw;
+    height: 100vw;
+    position: absolute;
 
 }
 
@@ -367,7 +478,6 @@
         transform: translateX(8vw) translateY(-33vw)
     }
 }
-
 
 
 
