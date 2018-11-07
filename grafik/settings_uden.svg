@@ -9,7 +9,7 @@
         fill: #1c96c6;
       }
 
-      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+      .cls-3, .cls-4, .cls-5 {
         fill: #fff;
       }
 
@@ -20,23 +20,6 @@
       .cls-4 {
         opacity: 0.31;
       }
-
-      .cls-5 {
-        font-size: 72px;
-      }
-
-      .cls-5, .cls-6 {
-        font-family: Crushed-Regular, Crushed;
-      }
-
-      .cls-6 {
-        font-size: 148px;
-        letter-spacing: 0.04em;
-      }
-
-      .cls-7 {
-        opacity: 0.88;
-      }
     </style>
   </defs>
   <title>settings</title>
@@ -44,8 +27,5 @@
   <rect class="cls-2" x="65.5" y="553.99" width="929.08" height="660.11" rx="12"/>
   <ellipse class="cls-3" cx="85.39" cy="781.29" rx="4.26" ry="201.25"/>
   <ellipse class="cls-4" cx="830.74" cy="1190.43" rx="133.06" ry="4.26"/>
-  <text class="cls-5" transform="translate(217.07 857.68)">Music</text>
-  <text class="cls-5" transform="translate(207.07 987.68)">sounds EffEct</text>
-  <text class="cls-6" transform="translate(278.7 705.41) scale(1 1.02)">SETTINGS</text>
-  <text/>  <rect class="cls-7" x="216" y="894" width="666" height="7"/>
-</svg>
+  <line class="cls-5" x1="180.57" y1="896.36" x2="878.57" y2="894.47"/>
+  <text/></svg>

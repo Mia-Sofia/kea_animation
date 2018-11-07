@@ -1,5 +1,6 @@
 window.addEventListener("load", sidenVises);
 
+let tid = 30;
 let life = 3;
 
 function sidenVises() {
@@ -34,16 +35,80 @@ function startGame() {
     document.querySelector("#start").classList.remove("fade_out");
 
 
-    document.querySelector("#pizza").classList.add("pizza_bevaegelse");
-    document.querySelector("#Pizza_rotated").classList.add("Pizza_rotated_bevaegelse");
-    document.querySelector("#batteri").classList.add("batteri_bevaegelse");
-    document.querySelector("#batteri_rotaed").classList.add("batteri_rotaed_bevaegelse");
-    document.querySelector("#avocado_rotaed_01").classList.add("avocado_rotaed_01_bevaegelse");
-    document.querySelector("#avocado_rotaded_02").classList.add("avocado_rotaed_02_bevaegelse");
-    document.querySelector("#milk_rotated").classList.add("milk_rotated_bevaegelse");
-    document.querySelector("#milk").classList.add("milk_bevaegelse");
-    document.querySelector("#glass_rotated_01").classList.add("glass_rotated_01_bevaegelse");
-    document.querySelector("#glass_rotated_02").classList.add("glass_rotated_01_bevaegelse");
+    document.querySelector("#tid").innerHTML = tid;
+
+    let timerInterval = setInterval(function () {
+        document.querySelector("#tid").innerHTML = tid;
+        tid--;
+        if (tid < 0) {
+            tid = 0;
+            clearInterval(timerInterval)
+            levelCompleted();
+        }
+    }, 1000);
+
+
+
+    // kopier denne linje v og ændre id
+    document.querySelector("#pizza").classList.add('bevaegelse1');
+
+    document.querySelector('.bevaegelse1').addEventListener('animationend', newAnimation)
+
+    function newAnimation() {
+        let randomNumber = Math.floor((Math.random() * 100) + 1);
+
+        console.log(randomNumber)
+        this.classList.remove('bevaegelse1');
+
+        this.style.transform = 'translate(' + randomNumber + 'vw, 0vw)'
+
+        setTimeout(function () {
+            //tilføj andre elementer kopier v linje og ændre id
+            document.querySelector("#pizza").classList.add('bevaegelse1');
+        }, 200)
+
+        this.addEventListener('animationend', newAnimation)
+    }
+
+
+
+
+    //    document.querySelector("#Pizza_rotated").classList.add("Pizza_rotated_bevaegelse");
+    //
+    //
+    //
+    //
+    //    document.querySelector("#batteri").classList.add("batteri_bevaegelse");
+    //
+    //
+    //
+    //    document.querySelector("#batteri_rotaed").classList.add("batteri_rotaed_bevaegelse");
+    //
+    //
+    //
+    //    document.querySelector("#avocado_rotaed_01").classList.add("avocado_rotaed_01_bevaegelse");
+    //
+    //
+    //
+    //
+    //    document.querySelector("#avocado_rotaded_02").classList.add("avocado_rotaed_02_bevaegelse");
+    //
+    //
+    //
+    //    document.querySelector("#milk_rotated").classList.add("milk_rotated_bevaegelse");
+    //
+    //
+    //
+    //
+    //    document.querySelector("#milk").classList.add("milk_bevaegelse");
+    //
+    //
+    //
+    //    document.querySelector("#glass_rotated_01").classList.add("glass_rotated_01_bevaegelse");
+    //
+    //
+    //
+    //    document.querySelector("#glass_rotated_02").classList.add("glass_rotated_01_bevaegelse");
 
 
 }
@@ -116,13 +181,9 @@ function gameOver() {
 
 
 function levelCompleted() {
+    console.log("levelCompleted");
 
 }
-
-
-
-
-
 
 
 
@@ -210,4 +271,3 @@ function musicOn() {
 
     document.querySelector("#musik").play();
 }
-
