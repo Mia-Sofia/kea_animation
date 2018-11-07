@@ -1,0 +1,36 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="323.71" height="138.56" viewBox="0 0 323.71 138.56">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #0a1733;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-3 {
+        font-size: 90px;
+        font-family: Crushed-Regular, Crushed;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="226.24" cy="68.63" r="64.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#80bed6"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="92.81" cy="68.46" r="64.06" xlink:href="#radial-gradient"/>
+  </defs>
+  <title>EXIT_botton</title>
+  <g>
+    <g>
+      <path class="cls-1" d="M159.53,129.5c73.68,0,134.67,12.59,133.41-61-1.22-71.11-59.73-61-133.41-61"/>
+      <path class="cls-2" d="M159.53,7.42c-73.68,0-132.15-7.55-133.41,61s59.73,61,133.41,61"/>
+    </g>
+    <text class="cls-3" transform="translate(93.2 93.59)">EXIT</text>
+  </g>
+</svg>

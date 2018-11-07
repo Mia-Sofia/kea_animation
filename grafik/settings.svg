@@ -1,0 +1,31 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0a1733;
+      }
+
+      .cls-2 {
+        fill: #1c96c6;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: 0.2;
+      }
+
+      .cls-4 {
+        opacity: 0.31;
+      }
+    </style>
+  </defs>
+  <title>settings</title>
+  <rect class="cls-1" x="84.92" y="567.73" width="929.08" height="660.11" rx="12"/>
+  <rect class="cls-2" x="65.5" y="553.99" width="929.08" height="660.11" rx="12"/>
+  <ellipse class="cls-3" cx="85.39" cy="781.29" rx="4.26" ry="201.25"/>
+  <ellipse class="cls-4" cx="830.74" cy="1190.43" rx="133.06" ry="4.26"/>
+  <line class="cls-5" x1="180.57" y1="896.36" x2="878.57" y2="894.47"/>
+  <text/></svg>

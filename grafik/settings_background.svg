@@ -1,0 +1,27 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c96c6;
+        opacity: 0.86;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        opacity: 0.31;
+      }
+    </style>
+  </defs>
+  <title>settings_background</title>
+  <rect class="cls-1" x="171.5" y="690.23" width="740.04" height="525.79" rx="12"/>
+  <ellipse class="cls-2" cx="187.34" cy="871.28" rx="3.39" ry="160.3"/>
+  <ellipse class="cls-3" cx="781.03" cy="1197.16" rx="105.99" ry="3.39"/>
+  <line class="cls-4" x1="263.16" y1="962.93" x2="819.13" y2="961.42"/>
+</svg>

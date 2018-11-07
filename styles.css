@@ -38,7 +38,7 @@ body {
 
 .pulse {
     animation-name: pulse_kf;
-    animation-duration: 1.7s;
+    animation-duration: 0.4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
@@ -90,6 +90,7 @@ body {
     left: 18vw;
     top: 39vw;
 
+
     cursor: pointer;
 }
 
@@ -102,17 +103,8 @@ body {
 }
 
 
-#settings {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    background-image: url(grafik/);
-    background-size: 100%;
-    left: 40vw;
-    top: 77vw;
-}
 
-
+/*___________________________________IN GAME__________________________________________*/
 
 #game_background {
     background: url("grafik/background_basket.svg");
@@ -154,7 +146,7 @@ body {
     left: 3vw;
 }
 
-
+/*________________________________GAME ELEMENTS__________________________________*/
 
 #pizza {
     background: url("grafik/pizza.svg");
@@ -162,13 +154,13 @@ body {
     width: 15vw;
     height: 24vw;
     position: absolute;
-    transform: translateX(65vw) translateY(-200vw);
+    transform: translateX(36vw) translateY(0vw);
 }
 
 
 .pizza_bevaegelse {
     animation-name: pizza_bevaegelse;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 3;
     animation-timing-function: linear;
 
@@ -178,11 +170,11 @@ body {
 @keyframes pizza_bevaegelse {
 
     0% {
-        transform: translateX(65vw) translateY(-200vw)
+        transform: translateX(36) translateY(0)
     }
 
     100% {
-        transform: translateX(45vw) translateY(-40vw);
+        transform: translateX(0) translateY(90vw);
     }
 }
 
@@ -192,7 +184,7 @@ body {
     background: url("grafik/Pizza_rotated.svg");
     background-size: 100%;
     width: 20vw;
-    height: 15vw;
+    height: 14.7vw;
     position: absolute;
     transform: translateX(30vw) translateY(-195vw);
 
@@ -202,8 +194,8 @@ body {
 
 .Pizza_rotated_bevaegelse {
     animation-name: Pizza_rotated_bevaegelse;
-    animation-duration: 3s;
-    animation-iteration-count: 4;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
     animation-timing-function: linear;
 
 
@@ -213,19 +205,13 @@ body {
 @keyframes Pizza_rotated_bevaegelse {
 
     0% {
-        transform: translateX(35vw) translateY(-185vw);
+        transform: translateX(3) translateY(0)
     }
 
     100% {
-        transform: translateX(30vw) translateY(-30vw);
+        transform: translateX(0) translateY(80vw);
     }
 }
-
-
-
-
-
-
 
 
 
@@ -253,11 +239,11 @@ body {
 @keyframes batteri_bevaegelse {
 
     0% {
-        transform: translateX(25vw) translateY(-200vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(25vw) translateY(-30vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
 
@@ -287,11 +273,11 @@ body {
 @keyframes batteri_rotaed_bevaegelse {
 
     0% {
-        transform: translateX(65vw) translateY(-195vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(65vw) translateY(-60vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
 
@@ -321,14 +307,13 @@ body {
 @keyframes avocado_rotaed_01_bevaegelse {
 
     0% {
-        transform: translateX(15vw) translateY(-195vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(17vw) translateY(-30vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
-
 
 
 
@@ -357,14 +342,13 @@ body {
 @keyframes avocado_rotaed_02_bevaegelse {
 
     0% {
-        transform: translateX(87vw) translateY(-195vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(80vw) translateY(-18vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
-
 
 
 
@@ -393,11 +377,11 @@ body {
 @keyframes milk_rotated_bevaegelse {
 
     0% {
-        transform: translateX(87vw) translateY(-210vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(60vw) translateY(-18vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
 
@@ -428,16 +412,13 @@ body {
 @keyframes milk_bevaegelse {
 
     0% {
-        transform: translateX(46vw) translateY(-210vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(80vw) translateY(-33vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
-
-
-
 
 
 
@@ -456,9 +437,6 @@ body {
 
 
 
-
-
-
 .glass_rotated_01_bevaegelse {
     animation-name: glass_rotated_01_bevaegelse;
     animation-duration: 2s;
@@ -471,18 +449,13 @@ body {
 @keyframes glass_rotated_01_bevaegelse {
 
     0% {
-        transform: translateX(46vw) translateY(-210vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(8vw) translateY(-33vw)
+        transform: translateX(0) translateY(10vw);
     }
 }
-
-
-
-
-
 
 
 #glass_rotated_02 {
@@ -491,7 +464,7 @@ body {
     width: 17vw;
     height: 17vw;
     position: absolute;
-    transform: translateX(50vw) translateY(-210vw)
+    transform: translateX(60vw) translateY(2vw)
 }
 
 
@@ -507,10 +480,55 @@ body {
 @keyframe glass_rotated_01_bevaegelse {
 
     0% {
-        transform: translateX(50vw) translateY(-210vw)
+        transform: translateX(0) translateY(0)
     }
 
     100% {
-        transform: translateX(8vw) translateY(-33vw)
+        transform: translateX(0) translateY(10vw);
     }
+}
+
+
+
+
+
+/*
+
+________________________________SETTINGS____________________________________
+*/
+
+
+
+#settings {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-image: url(grafik/mini_settings.svg);
+    background-size: 100%;
+    left: 48vw;
+    top: 1vw;
+}
+
+#settings_screen {
+    position: absolute;
+    width: 55vw;
+    height: 65vw;
+    background-image: url(grafik/settings.svg);
+    top: 0vw;
+    left: 1.2vw;
+    border-radius: 2vw;
+    color: white;
+}
+
+
+#setting_close {
+    position: absolute;
+
+    left: 20vw;
+    top: 50vw;
+
+    width: 15vw;
+    height: 6.8vw;
+    background-image: url(grafik/EXIT_botton.svg);
+    background-size: 100%;
 }
